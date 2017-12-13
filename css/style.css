@@ -1,0 +1,520 @@
+ /*------  Allgemeine Anpassungen  -----*/
+ 
+ body {
+     font-family: 'Varela Round', sans-serif;
+     color: #ffffff;
+     margin: 0;
+     font-size: 7vmin;
+     font-weight: 100;
+ }
+ 
+ h1,
+ h2,
+ h3 {
+     margin: 0 0 0.5vmin 0;
+     font-family: 'Amatic SC', cursive;
+     font-weight: 100;
+ }
+ 
+ h4,
+ h5,
+ h6 {
+     margin: 0 0 0.5vmin 0;
+     font-family: 'Open Sans', sans-serif;
+     font-weight: 100;
+ }
+ 
+ h1 {
+     font-size: 180%;
+ }
+ 
+ h2 {
+     font-size: 160%;
+ }
+ 
+ h3 {
+     font-size: 140%;
+ }
+ 
+ h3.head {
+     position: absolute;
+     right: 3vw;
+     bottom: 11vh;
+ }
+ 
+ h3 .moreIcon {
+     background-image: url(../img/PlusButton.png);
+     display: inline-block;
+     width: 3vw;
+     height: 3vw;
+     background-size: contain;
+     background-repeat: no-repeat;
+     top: 4vh;
+     margin-left: 1vw;
+     cursor: pointer;
+     position: absolute;
+     left: -5vw;
+ }
+ 
+ p.text {
+     position: absolute;
+     right: 3vw;
+     width: 35vw;
+     text-align: right;
+     bottom: 2vh;
+ }
+#scene-Monokulturen .head, #scene-PestizideText .head {
+    top: 0vh;
+}
+#scene-Monokulturen .text, #scene-PestizideText .text {
+   top: 12vh;
+}
+ 
+ .more {
+     opacity: 0;
+     position: absolute;
+     width: 100vw;
+     height: 100vh;
+     background: #000000e6;
+     left: 0;
+     transition: top 0.1s 1.1s, opacity 1s;
+     display: table;
+     top: -100vh;
+ }
+ 
+ .more * {
+     color: #fff;
+     text-align: left;
+ }
+ 
+ .moreWrapper {
+     display: table-cell;
+     vertical-align: middle;
+     position: relative;
+ }
+ 
+ .moreWrapperInner {
+     margin: 0 auto;
+     position: relative;
+     max-width: 870px;
+ }
+ 
+ h3.highlight~.more {
+     opacity: 1;
+     top: 0vh;
+     transition: top 0.1s, opacity 1s 0.2s;
+ }
+ 
+ h4 {
+     font-size: 120%;
+ }
+ 
+ h5 {
+     font-size: 100%;
+ }
+ 
+ p {
+     font-size: 50%;
+     margin: 0 0 0.5vmin 0;
+     font-family: 'Open Sans', sans-serif;
+ }
+ 
+ div {
+     position: fixed;
+ }
+ 
+ #parallax {
+     width: 100vw;
+     height: 100vh;
+ }
+ 
+ .layer {
+     height: 100vh;
+     width: 100vw;
+ }
+ 
+ #layer1 {
+     background: url(../img/hg/Nature-Bushes.png);
+     background-size: 380% auto;
+     background-position-y: bottom;
+     background-repeat-y: no-repeat;
+ }
+ 
+ #layer2 {
+     background: url(../img/hg/Nature-Ground.png);
+     height: 100vh;
+     width: 100vw;
+     background-size: 380% auto;
+     background-position-y: bottom;
+     background-repeat-y: no-repeat;
+ }
+ 
+ #layer3 {
+     background: url(../img/hg/Nature-SKY.png);
+     height: 100vh;
+     width: 100vw;
+     background-size: 200% 100%;
+     background-position-y: bottom;
+     background-repeat-y: no-repeat;
+ }
+ 
+ #layer4 {
+     background: url(../img/hg/FelderIG.png);
+     background-size: 380% auto;
+     background-position-y: bottom;
+     background-repeat-y: no-repeat;
+ }
+ 
+ .section-100 {
+     height: 100vh;
+     width: 100vw;
+ }
+ /*------  Bienen  -----*/
+ 
+ .beeInnerWrapper {
+     position: relative;
+     margin: 0 auto;
+     height: 100vw;
+ }
+ /*Allgemein*/
+ 
+ .bee img.beeImg {
+     width: 100px;
+     height: auto;
+ }
+ 
+ .beeBig img.beeImg {
+     width: 23vmin;
+     animation: MoveUpDown 5s linear infinite;
+ }
+ 
+ .beeMedium img.beeImg {
+     width: 10vmin;
+     animation: MoveUpDown 4s linear infinite;
+ }
+ 
+ .beeSmall img.beeImg {
+     width: 5vmin;
+     animation: MoveUpDown 5s linear infinite;
+ }
+ /*Einzelne Bienen*/
+ 
+ div#bee1 {
+     padding-top: 48vh;
+     left: 57vw;
+ }
+ 
+ div#bee2 {
+     padding-top: 40vh;
+     left: 43vw;
+ }
+ 
+ div#bee3 {
+     padding-top: 25vh;
+     left: 57vw;
+ }
+ 
+ div#bee4 {
+     padding-top: 32vh;
+     left: 38vw;
+ }
+ 
+ div#bee5 {
+     padding-top: 30vh;
+     left: 46vw;
+ }
+ /*Allgemein*/
+ 
+ .section-100 {
+     height: 100vh;
+     position: relative;
+     box-sizing: border-box;
+     width: 100vw;
+     overflow: visible;
+ }
+ 
+ .scene {
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 100vw;
+     height: 100vh;
+ }
+ 
+ .startHidden {
+     display: none;
+     left: 110vw;
+ }
+ 
+ .startScene {
+     display: table;
+     justify-content: center;
+     align-items: center;
+     background: #ffb100;
+     text-align: center;
+     background-image: url("../img/Waben.svg");
+     background-size: auto 100%;
+     background-position: right top;
+     z-index: 10;
+ }
+ 
+ .startScene:after {
+     content: '';
+     position: absolute;
+     right: calc(-50vw - -2px);
+     height: 100%;
+     width: 50vw;
+     background: url(../img/Waben-half.svg);
+     background-size: auto 100%;
+ }
+ 
+ .startSceneInner {
+     display: table-cell;
+     vertical-align: middle;
+     position: relative;
+ }
+ 
+ .startSceneInner * {
+     color: #fff;
+ }
+ /*Szene 1*/
+ 
+ .beeWrapper {
+     z-index: 5;
+ }
+ 
+ .startSceneInner h1,
+ .startSceneInner h5 {
+     margin: 0;
+ }
+ 
+ .startSceneInner h1 {
+     margin-top: -2vmin;
+ }
+ 
+ .scrollIcon {
+     margin-top: 30px;
+ }
+ 
+ #startScroll {
+     animation-duration: 10s;
+     animation-name: appear;
+     position: relative;
+     bottom: 0vh;
+ }
+ 
+ #startArrow {
+     -webkit-animation-name: bounce;
+     animation-name: bounce;
+     -webkit-animation-duration: 1s;
+     animation-duration: 1s;
+     -webkit-animation-fill-mode: both;
+     animation-fill-mode: both;
+     -webkit-animation-timing-function: linear;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+     -webkit-animation-iteration-count: infinite;
+     height: 5vw;
+ }
+ 
+ #iconBee {
+     animation-duration: 3s;
+     animation-name: appearBottom;
+     position: relative;
+     bottom: 0vh;
+ }
+ 
+ #startHeadline {
+     animation-duration: 5s;
+     animation-name: appear;
+     position: relative;
+     opacity: 1;
+ }
+ 
+ #blume1 {
+     width: 65vw;
+     position: relative;
+     top: 62vh;
+     left: 4vw;
+ }
+ 
+ .flower {
+     width: 10vw;
+     position: absolute;
+     bottom: -10vh;
+ }
+ 
+ #flower1 {
+     left: 10vw;
+ }
+ 
+ #flower2 {
+     left: 20vw;
+     bottom: -4vh;
+ }
+ 
+ #flower3 {
+     left: 60vw;
+ }
+ 
+ #flower4 {
+     left: 80vw;
+ }
+ 
+ #flower5 {
+     left: 120vw;
+     bottom: -10vh;
+ }
+ 
+ #flower6 {
+     left: 160vw;
+ }
+ 
+ #flower7 {
+     left: 210vw;
+ }
+ 
+ #flower8 {
+     left: 220vw;
+     bottom: -8vh;
+ }
+ 
+ #flower9 {
+     left: 260vw;
+ }
+ 
+ #flower10 {
+     left: 280vw;
+ }
+ 
+ #flower11 {
+     left: 320vw;
+     bottom: -5vh;
+ }
+ 
+ #flower12 {
+     left: 360vw;
+ }
+ 
+  #flower13 {
+     left: 370vw;
+ }
+ 
+ .antibiotika {
+	width: 50%;
+	height: auto;
+	position: absolute;
+	left: 529px;
+	top: 20242px;
+     /* left: 7vw;*/
+ }
+ 
+ .textPosition {
+     top: 0vh;
+     text-align: center;
+     z-index: 8;
+     width: 100vw;
+ }
+ 
+ #transitionTree {
+     position: fixed;
+     z-index: 0;
+     bottom: -30px;
+     width: 33vw;
+ }
+ /*Szene Pestizide*/
+ 
+ #gasmaskenMann {
+     bottom: 0;
+     position: absolute;
+ }
+ 
+ .gasWolke {
+     width: 40vw;
+     left: 60vw;
+     position: absolute;
+     z-index: 100;
+ }
+ /*Ähren*/
+ 
+ .aehre {
+     position: absolute;
+     bottom: 0;
+     height: auto;
+ }
+ 
+ img#aehre1 {
+     width: 9vw;
+     left: 17vw;
+     bottom: -9vh;
+ }
+ 
+ img#aehre2 {
+     width: 8vw;
+     left: 37vw;
+     bottom: -16vh;
+ }
+ 
+ img#aehre3 {
+     width: 10vw;
+     left: 47vw;
+     bottom: -16vh;
+ }
+ 
+ img#aehre4 {
+     width: 8vw;
+     left: 58vw;
+     bottom: -34vh;
+ }
+ 
+ img#aehre5 {
+     width: 7vw;
+     left: 26vw;
+     bottom: -20vh;
+ }
+ 
+ img#aehre6 {
+     width: 7vw;
+     left: 78vw;
+     bottom: -18vh;
+ }
+ /*----- Animationen -----*/
+ 
+ @-webkit-keyframes appearBottom {
+     0% {
+         bottom: -100vh;
+     }
+     100% {
+         bottom: 0vh;
+     }
+ }
+ 
+ @-webkit-keyframes appear {
+     0%,
+     50% {
+         opacity: 0;
+     }
+     100% {
+         opacity: 1;
+     }
+ }
+ 
+ @-webkit-keyframes bounceArrow {
+     0%,
+     100% {
+         -webkit-transform: translateY(0);
+     }
+     50% {
+         -webkit-transform: translateY(-5px);
+     }
+ }
+ 
+ @keyframes bounce {
+     0%,
+     100% {
+         transform: translateY(0);
+     }
+     50% {
+         transform: translateY(-5px);
+     }
+ }

@@ -1,0 +1,221 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Gründe, wieso Bienen sterben und Folgen">
+    <meta name="keywords" content="Bienen,Sterben,Gründe,Folgen">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/skrollr.js"></script>
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <div id="preloader">
+        <div id="preloaderWrapper">
+            <div id="preloaderWrapperInner">
+                <div class="sk-folding-cube">
+                    <div class="sk-cube1 sk-cube"></div>
+                    <div class="sk-cube2 sk-cube"></div>
+                    <div class="sk-cube4 sk-cube"></div>
+                    <div class="sk-cube3 sk-cube"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="parallax">
+        <!-- Hintergrund - Berge-->
+        <div class="layer" id="layer3" data-0="background-position-x: 0%" data-20000="background-position-x: 40%">
+        </div>
+        <!-- Hintergrund - Landschaft -->
+        <div class="layer" id="layer2" data-0="background-position-x: -50%; left: 0vw;" data-5500="background-position-x: -30%; left: 0vw;" data-8500="background-position-x: -30%; left:-100vw">
+        </div>
+
+        <div class="layer" id="layer4" data-start="background-position-x: -50%;   display:none;" data-3800="background-position-x: -50%;   display: block;" data-5500="filter: grayscale(0%);background-position-x: -50%;   left: 100vw;" data-8500="background-position-x: -50%;   left:0vw;" data-20000="background-position-x: -10%">
+        </div>
+
+        <!-- Bienen Container + Antibitika -->
+        <div class="beeWrapper section-100 ">
+            <div class="beeInnerWrapper">
+
+                <!-- Biene 1 - Ebene 3 -->
+                <div id="bee1" class="bee beeSmall">
+                    <!-- Antibiotikum -->
+                    <img class="antibiotika" src="img/Antibiotika.svg" data-1800="transform: rotate(0deg) scale(1);top:-10vh" data-2100="transform: rotate(500deg) scale(0.6);top:45vh;left:65%;" data-2400=" transform: rotate(600deg) scale(0); top:49vh; left:65%;">
+                    <!-- Biene - Standard -->
+                    <img class="beeImg" src="img/Biene.png" data-start="display:block" data-2100="display:none;" data-2450="display:block;">
+                    <!-- BieneGIF - Mund offen -->
+                    <img class="beeImg" src="img/BieneMundOffen.svg" data-start="display:none" data-2100="display:block;" data-2450="display:none;">
+                </div>
+
+                <!-- Biene 2 - Ebene 3 -->
+                <div id="bee2" class="bee beeSmall">
+                    <!-- Antibiotikum -->
+                    <img class="antibiotika" src="img/Antibiotika.svg" data-2000="transform: rotate(0deg) scale(1);top:-10vh" data-2300="transform: rotate(500deg) scale(0.6);top:38vh;left:65%;" data-2600=" transform: rotate(600deg) scale(0); top:42vh; left:65%;">
+                    <!-- Biene - Standard -->
+                    <img class="beeImg" src="img/Biene.png" data-start="display:block" data-2400="display:none;" data-2750="display:block;">
+                    <!-- Biene - Mund offen -->
+                    <img class="beeImg" src="img/BieneMundOffen.svg" data-start="display:none" data-2400="display:block;" data-2750="display:none;">
+                </div>
+
+                <!-- Biene 3 - Ebene 2 -->
+                <div id="bee3" class="bee beeMedium">
+                    <!-- Antibiotikum -->
+                    <img class="antibiotika" src="img/Antibiotika.svg" data-1800="transform: rotate(0deg) scale(1);top:-10vh" data-2100="transform: rotate(500deg) scale(0.6);top:23vh;left:65%;" data-2400=" transform: rotate(600deg) scale(0); top:27vh; left:65%;">
+                    <!-- Biene - Standard -->
+                    <img class="beeImg" src="img/Biene.png" data-start="display:block;  transform:rotate(0deg)" data-2100="display:none;" data-2450="display:block;" data-12000="transform: rotate(0deg);margin-top:0vh;" data-15000=" transform: rotate(1500deg); margin-top: 100vh;">
+                    <!-- Biene - Mund offen -->
+                    <img class="beeImg" src="img/BieneMundOffen.svg" data-start="display:none" data-2100="display:block;" data-2450="display:none;">
+                </div>
+
+                <!-- Biene 4 - Ebene 2 -->
+                <div id="bee4" class="bee beeMedium">
+                    <!-- Antibiotikum -->
+                    <img class="antibiotika" src="img/Antibiotika.svg" data-1400="transform: rotate(0deg) scale(1);top:-10vh" data-1700="transform: rotate(500deg) scale(0.6);top:30vh;left:65%;" data-2000=" transform: rotate(600deg) scale(0); top:33vh; left:65%;">
+                    <!-- Biene - Standard -->
+                    <img class="beeImg" src="img/Biene.png" data-start="display:block" data-1700="display:none;" data-2050="display:block;" data-2100="padding-top:0vh" data-2400="padding-top:10vh" >
+                    <!-- Biene - Mund offen -->
+                    <img class="beeImg" src="img/BieneMundOffen.svg" data-start="display:none" data-1700="display:block;" data-2050="display:none;">
+                </div>
+
+                <!-- Biene 5 - Ebene 1 -->
+                <div id="bee5" class="bee beeBig">
+                    <!-- Antibiotikum -->
+                    <img class="antibiotika" src="img/Antibiotika.svg" data-1500="transform: rotate(0deg) scale(1);top:-10vh" data-1800="transform: rotate(500deg) scale(0.6);top:32vh;left:65%;" data-2100=" transform: rotate(600deg) scale(0); top:36vh; left:65%;">
+                    <!-- Biene - Standard -->
+                    <img class="beeImg" src="img/Biene.png" data-start="display:block; padding-top:0vh" data-1800="display:none;" data-2150="display:block;" data-3500="padding-top:0vh" data-4900="padding-top:19vh">
+                    <!-- Biene - Mund offen -->
+                    <img class="beeImg" src="img/BieneMundOffen.svg" data-start="display:none" data-1800="display:block;" data-2150="display:none;">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Startscene -->
+        <div class="startScene scene" data-50="left: 0vw" data-1000="left: -160vw">
+            <div class="startSceneInner">
+                <img id="iconBee" src="img/Icon-Biene.svg">
+                <h1 id="startHeadline">Bienen sterben.</h1>
+                <div id="startScroll" class="scrollIcon">
+                    <img id="startArrow" class="bounce animated " src="img/ScrollIcon.svg">
+                </div>
+            </div>
+        </div>
+
+        <!-- Scene Antibiotikum - Schriftzug -->
+        <div id="scene-Antibiotikum" class="scene textPosition" data-start="left:110vw; opacity:1" data-2000="left:0vw;opacity:1" data-3500="opacity:1" data-4500="opacity:0">
+            <h3 class="head">Antibiotikum <span class="moreIcon"></span></h3>
+            <p class="text">Durch Antibiotikum werden Bienen anfälliger für Krankheiten ...
+                <p>
+                    <div class="more">
+                        <div class="moreWrapper">
+                            <div class="moreWrapperInner">
+                                <h3>Antibiotikum</h3>
+                                <p>Viele Imker in den USA präparieren Bienenstöcke mit dem Antibiotikum Tetracyclin. Sie wollen die Larven vor der Infektionskrankheit "Amerikanische Faulbrut" schützen. Forscher haben festgestellt, dass nach einer längeren Behandlung mit Tetracyclin deutlich mehr Tiere sterben als ohne das Medikament. Man geht davon aus, dass Tetracyclin bei den Bienen bestimmte Darmbakterien abtötet, die vor potenziell schädlichen Serratia-Darmbakterien schützen.</p>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+
+        <!-- Scene Monokulturen - Schriftzug -->
+        <div id="scene-Monokulturen" class="scene textPosition" data-4000="left:110vw;" data-5000="left:0vw; opacity:1" data-7000="opacity:1" data-9000="opacity:0">
+            <h3 class="head">Monokulturen <span class="moreIcon"></span></h3>
+            <p class="text">Moderne Landwirtschaft vermindert die Vielfalt des Nahrungsangebots für Bienen ...</p>
+            <div class="more">
+                <div class="moreWrapper">
+                    <div class="moreWrapperInner">
+                        <h3>Monokulturen</h3>
+                        <p>Der zunehmende Aufbau von Monokulturen vermindert die Vielfalt des Nahrungsangebots für Bienen. Diese brauchen eine vielseitige Ernährung – das macht sie widerstandsfähiger gegen Krankheiten. Oft blühen einseitig angepflanzte Nutzpflanzen nur kurze Zeit und lassen die Bienen das restliche Jahr über hungern. Auch private „ordentliche“ grüne Gärten ohne Blumen oder nur mit Zierpflanzen bieten unseren Bienen keine Nahrung. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Blumen -->
+        <div class="scene" style="width: 300vw" data-start="left:110vw" data-500="left:110vw" data-5000="left:-400vw">
+            <img class="flower" id="flower1" src="img/Blume1.svg">
+            <img class="flower" id="flower2" src="img/Blume2.svg">
+            <img class="flower" id="flower3" src="img/Blume3.svg">
+            <img class="flower" id="flower4" src="img/Blume1.svg">
+            <img class="flower" id="flower5" src="img/Blume2.svg">
+            <img class="flower" id="flower6" src="img/Blume3.svg">
+            <img class="flower" id="flower7" src="img/Blume1.svg">
+            <img class="flower" id="flower8" src="img/Blume2.svg">
+            <img class="flower" id="flower9" src="img/Blume3.svg">
+            <img class="flower" id="flower10" src="img/Blume1.svg">
+            <img class="flower" id="flower11" src="img/Blume2.svg">
+            <img class="flower" id="flower12" src="img/Blume3.svg">
+        </div>
+
+
+
+        <!-- Scene Blumenwiese -->
+        <img id="transitionTree" src="img/tree.svg" data-start="display:none;left:78vw" data-5500="display:block;left:83vw" data-9000="left:-34vw">
+
+
+
+        <!-- Scene Pestizide -->
+        <div id="scene-Pestizide" class="scene" data-9000="top:100vh; left:110vw; width:10vw;" data-12000="top:0;left:-20vw; width:70vw;">
+            <img id="gasmaskenMann" src="img/Gasmaskenmann.svg">
+            <img class="gasWolke" src="img/Gaswolke.svg" data-12000="opacity:0" data-12500="opacity:1">
+        </div>
+        <div id="aehrenGroup" class="scene" data-9000="left:110vw;" data-12000="left:0vw;">
+            <img src="img/aehren/aehre1.png" class="aehre" id="aehre1">
+            <img src="img/aehren/aehre2.png" class="aehre" id="aehre2">
+            <img src="img/aehren/aehre3.png" class="aehre" id="aehre3">
+            <img src="img/aehren/aehre4.png" class="aehre" id="aehre4">
+            <img src="img/aehren/aehre5.png" class="aehre" id="aehre5">
+            <img src="img/aehren/aehre1.png" class="aehre" id="aehre6">
+
+        </div>
+        <div id="scene-PestizideText" class="scene textPosition" data-10000="left:110vw;" data-12000="left:0vw; opacity:1" data-13000="opacity:1" data-16000="opacity:0">
+            <h3 class="head">Pestizide <span class="moreIcon"></span></h3>
+            <p class="text">Der Einsatz von Pflanzenschutzmittel in der Landwirtschaft vergiftet Bienen ...</p>
+            <div class="more">
+                <div class="moreWrapper">
+                    <div class="moreWrapperInner">
+                        <h3>Pestizide</h3>
+                        <p>Der Einsatz von Pestiziden in der Agrarwirtschaft macht den Bienen ebenfalls zu schaffen. Diese Giftstoffe wirken sich nicht nur auf den Honig aus, sondern beeinflussen darüber hinaus das Nervensystem der Insekten und ihre natürliche Orientierungsfähigkeit. Pestizide können Lebensdauer und Fortpflanzung der Bienen beeinträchtigen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <script>
+        // preloader
+        $(window).on('load', function() {
+            $('#status').fadeOut();
+            $('#preloader').delay(350).fadeOut('slow');
+            $('body').delay(350).css({
+                'overflow': 'visible'
+            });
+        })
+        $(document).ready(function() {
+
+
+            $("h3.head .moreIcon").click(function() {
+                $(this).parent().toggleClass("highlight");
+            });
+            $(".more").click(function() {
+                $(this).parent().find(".head").toggleClass("highlight");
+            });
+            skrollr.init({
+                smoothScrolling: true,
+                smoothScrollingDuration: 400
+            });
+        });
+    </script>
+</body>
+
+</html>
