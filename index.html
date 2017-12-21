@@ -32,13 +32,13 @@
     </div>
     <div id="parallax">
         <!-- Hintergrund - Berge-->
-        <div class="layer" id="layer3" data-0="background-position-x: 0%" data-20000="background-position-x: 40%">
+        <div class="layer" id="layer3" data-0="background-position-x: 0%" data-12000="background-position-x: 40%">
         </div>
         <!-- Hintergrund - Landschaft -->
         <div class="layer" id="layer2" data-0="background-position-x: -50%; left: 0vw;" data-5500="background-position-x: -30%; left: 0vw;" data-8500="background-position-x: -30%; left:-100vw">
         </div>
-
-        <div class="layer" id="layer4" data-start="background-position-x: -50%;   display:none;" data-3800="background-position-x: -50%;   display: block;" data-5500="filter: grayscale(0%);background-position-x: -50%;   left: 100vw;" data-8500="background-position-x: -50%;   left:0vw;" data-20000="background-position-x: -10%">
+		<!-- Hintergrund - Felder -->
+        <div class="layer" id="layer4" data-start="background-position-x: -50%;   display:none;" data-3800="background-position-x: -50%;   display: block;" data-5500="filter: grayscale(0%);background-position-x: -50%;   left: 100vw;" data-8500="background-position-x: -50%;   left:0vw;" data-12000="background-position-x: -10%" data-20000="background-position-x: 20%">
         </div>
 
         <!-- Bienen Container + Antibitika -->
@@ -80,7 +80,7 @@
                     <!-- Antibiotikum -->
                     <img class="antibiotika" src="img/Antibiotika.svg" data-1400="transform: rotate(0deg) scale(1);top:-10vh" data-1700="transform: rotate(500deg) scale(0.6);top:30vh;left:65%;" data-2000=" transform: rotate(600deg) scale(0); top:33vh; left:65%;">
                     <!-- Biene - Standard -->
-                    <img class="beeImg" src="img/Biene.png" data-start="display:block" data-1700="display:none;" data-2050="display:block;" data-2100="padding-top:0vh" data-2400="padding-top:10vh" >
+                    <img class="beeImg" src="img/Biene.png" data-start="display:block" data-1700="display:none;" data-2050="display:block;" data-2100="padding-top:0vh" data-2400="padding-top:10vh" data-18400="transform:rotate(0deg);margin-top:0vh;"data-19500="transform:rotate(1500deg);margin-top:100vh;">
                     <!-- Biene - Mund offen -->
                     <img class="beeImg" src="img/BieneMundOffen.svg" data-start="display:none" data-1700="display:block;" data-2050="display:none;">
                 </div>
@@ -104,7 +104,7 @@
                 <img id="iconBee" src="img/Icon-Biene.svg">
                 <h1 id="startHeadline">Bienen sterben.</h1>
                 <div id="startScroll" class="scrollIcon">
-                    <img id="startArrow" class="bounce animated " src="img/ScrollIcon.svg">
+                    <img id="startArrow" class="bounce animated" src="img/ScrollIcon.svg">
                 </div>
             </div>
         </div>
@@ -155,29 +155,27 @@
         </div>
 
 
-
         <!-- Scene Blumenwiese -->
         <img id="transitionTree" src="img/tree.svg" data-start="display:none;left:78vw" data-5500="display:block;left:83vw" data-9000="left:-34vw">
 
 
-
         <!-- Scene Pestizide -->
-        <div id="scene-Pestizide" class="scene" data-9000="top:100vh; left:110vw; width:10vw;" data-12000="top:0;left:-20vw; width:70vw;">
-            <img id="gasmaskenMann" src="img/Gasmaskenmann.svg">
-            <img class="gasWolke" src="img/Gaswolke.svg" data-12000="opacity:0" data-12500="opacity:1">
+        <div id="scene-Pestizide" class="scene" data-9000="top:100vh; left:110vw; width:10vw;" data-12000="top:0;left:-20vw; width:70vw;" data-17000="left:-100vw" >
+            <img id="gasmaskenMann" src="img/Gasmaskenmann.svg" >
+            <img class="gasWolke" src="img/Gaswolke.svg" data-11500="opacity:0" data-12500="opacity:1" data-14500="opacity:0">
         </div>
-        <div id="aehrenGroup" class="scene" data-9000="left:110vw;" data-12000="left:0vw;">
+        <div id="aehrenGroup" class="scene" data-9000="left:110vw;" data-17000="left:-110vw;">
             <img src="img/aehren/aehre1.png" class="aehre" id="aehre1">
             <img src="img/aehren/aehre2.png" class="aehre" id="aehre2">
             <img src="img/aehren/aehre3.png" class="aehre" id="aehre3">
             <img src="img/aehren/aehre4.png" class="aehre" id="aehre4">
             <img src="img/aehren/aehre5.png" class="aehre" id="aehre5">
-            <img src="img/aehren/aehre1.png" class="aehre" id="aehre6">
+            <img src="img/aehren/aehre2.png" class="aehre" id="aehre6">
 
         </div>
         <div id="scene-PestizideText" class="scene textPosition" data-10000="left:110vw;" data-12000="left:0vw; opacity:1" data-13000="opacity:1" data-16000="opacity:0">
             <h3 class="head">Pestizide <span class="moreIcon"></span></h3>
-            <p class="text">Der Einsatz von Pflanzenschutzmittel in der Landwirtschaft vergiftet Bienen ...</p>
+            <p class="text">Der Einsatz von Pflanzenschutzmittel vergiftet Bienen ...</p>
             <div class="more">
                 <div class="moreWrapper">
                     <div class="moreWrapperInner">
@@ -188,6 +186,25 @@
             </div>
         </div>
 
+
+		<!-- Scene Milben -->
+            <img class="milbe" src="img/MilbeFallschirm.svg" data-start="display:block;" data-15000="top:-100vh;left:37vw;width:5vw;" data-18390="display:block;top:35vh;" data-18400="display:none;"> <!-- landet auf Biene -->
+            <img class="milbe" src="img/MilbeFallschirm.svg" data-17000="top:-100vh;left:20vw;width:10vw;" data-20000="top:200vh;">
+            <img class="milbe" src="img/MilbeFallschirm.svg" data-15000="top:-100vh;left:80vw;width:8vw;" data-20000="top:150vh;">
+
+        
+        <div id="scene-MilbenText" class="scene textPosition"  data-17000="left:110vw;" data-18000="left:0vw; opacity:1" data-19000="opacity:1" data-22000="opacity:0">
+            <h3 class="head">Milben <span class="moreIcon"></span></h3>
+            <p class="text"> befallen die Bienen ...</p>
+            <div class="more">
+                <div class="moreWrapper">
+                    <div class="moreWrapperInner">
+                        <h3>Milben</h3>
+                        <p>Die Varroamilbe gehört zu den größten Bedrohungen der westlichen Honigbiene. Zum einen ernährt  sie sich vom Blut der Bienen. Zusätzlich versucht sie in den Bienenstock zu gelangen, wo sie sich in die noch nicht verpuppten Zellen der Bienenbrut einnistet. Die Milbenpopulation kann so rasant anwachsen und das komplette Bienenvolk auslöschen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 

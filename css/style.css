@@ -63,10 +63,10 @@
      text-align: right;
      bottom: 2vh;
  }
-#scene-Monokulturen .head, #scene-PestizideText .head {
+#scene-Monokulturen .head, #scene-PestizideText .head, #scene-MilbenText .head {
     top: 0vh;
 }
-#scene-Monokulturen .text, #scene-PestizideText .text {
+#scene-Monokulturen .text, #scene-PestizideText .text, #scene-MilbenText .text {
    top: 12vh;
 }
  
@@ -478,6 +478,12 @@
      left: 78vw;
      bottom: -18vh;
  }
+ 
+  .milbe {
+	position: absolute;
+
+ }
+ 
  /*----- Animationen -----*/
  
  @-webkit-keyframes appearBottom {
