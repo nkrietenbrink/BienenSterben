@@ -41,7 +41,7 @@
      right: 3vw;
      bottom: 11vh;
  }
- 
+ /*
  h3 .moreIcon {
      background-image: url(../img/PlusButton.png);
      display: inline-block;
@@ -55,7 +55,7 @@
      position: absolute;
      left: -5vw;
  }
- 
+ */
  p.text {
      position: absolute;
      right: 3vw;
@@ -406,7 +406,7 @@
 	position: absolute;
 	left: 529px;
 	top: 20242px;
-     /* left: 7vw;*/
+     left: 65%;
  }
  
  .textPosition {
@@ -484,6 +484,11 @@
 
  }
  
+#treePeople {
+    position: absolute;
+    bottom: -10px;
+    height: 100vh;
+}
  /*----- Animationen -----*/
  
  @-webkit-keyframes appearBottom {

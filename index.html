@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="Gründe, wieso Bienen sterben und Folgen">
     <meta name="keywords" content="Bienen,Sterben,Gründe,Folgen">
-    <meta name="author" content="John Doe">
+    <meta name="author" content="Nadine Krietenbrink, Caroline Wolf, Igor Gromovow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/skrollr.js"></script>
@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
-
-
 
 </head>
 
@@ -31,14 +29,27 @@
         </div>
     </div>
     <div id="parallax">
+        
         <!-- Hintergrund - Berge-->
-        <div class="layer" id="layer3" data-0="background-position-x: 0%" data-12000="background-position-x: 40%">
+        <div class="layer" id="layer3" 
+             data-0=    "background-position-x: 0%" 
+             data-24000="background-position-x: 50%">
         </div>
+        
         <!-- Hintergrund - Landschaft -->
-        <div class="layer" id="layer2" data-0="background-position-x: -50%; left: 0vw;" data-5500="background-position-x: -30%; left: 0vw;" data-8500="background-position-x: -30%; left:-100vw">
+        <div class="layer" id="layer2" 
+             data-0=    "background-position-x: -50%; left: 0vw;"
+             data-5500= "background-position-x: -30%; left: 0vw;" 
+             data-8500= "background-position-x: -30%; left:-100vw">
         </div>
-		<!-- Hintergrund - Felder -->
-        <div class="layer" id="layer4" data-start="background-position-x: -50%;   display:none;" data-3800="background-position-x: -50%;   display: block;" data-5500="filter: grayscale(0%);background-position-x: -50%;   left: 100vw;" data-8500="background-position-x: -50%;   left:0vw;" data-12000="background-position-x: -10%" data-20000="background-position-x: 20%">
+        
+        <!-- Hintergrund - Felder -->
+        <div class="layer" id="layer4" 
+
+             data-5500=     "left: 100vw;"
+             data-8500=     "background-position-x: -50%; left:0vw;" 
+             data-12000=    "background-position-x: -10%" 
+             data-24000=    "background-position-x: 25%">
         </div>
 
         <!-- Bienen Container + Antibitika -->
@@ -48,51 +59,106 @@
                 <!-- Biene 1 - Ebene 3 -->
                 <div id="bee1" class="bee beeSmall">
                     <!-- Antibiotikum -->
-                    <img class="antibiotika" src="img/Antibiotika.svg" data-1800="transform: rotate(0deg) scale(1);top:-10vh" data-2100="transform: rotate(500deg) scale(0.6);top:45vh;left:65%;" data-2400=" transform: rotate(600deg) scale(0); top:49vh; left:65%;">
+                    <img class="antibiotika" src="img/Antibiotika.svg" 
+                         data-1800="transform: rotate(0deg) scale(1);       top:-10vh" 
+                         data-2100="transform: rotate(500deg) scale(0.6);   top:45vh;" 
+                         data-2400=" transform: rotate(600deg) scale(0);    top:49vh;">
                     <!-- Biene - Standard -->
-                    <img class="beeImg" src="img/Biene.png" data-start="display:block" data-2100="display:none;" data-2450="display:block;">
+                    <img class="beeImg" src="img/Biene.png" 
+                         data-start="display:block" 
+                         data-2100="display:none;" 
+                         data-2450="display:block;"
+                         data-6000="transform: rotate(0deg);       margin-top:0vh;" 
+                         data-8000=" transform: rotate(1500deg);   margin-top: 100vh;">
                     <!-- BieneGIF - Mund offen -->
-                    <img class="beeImg" src="img/BieneMundOffen.svg" data-start="display:none" data-2100="display:block;" data-2450="display:none;">
+                    <img class="beeImg" src="img/BieneMundOffen.svg" 
+                         data-start="display:none" 
+                         data-2100="display:block;" 
+                         data-2450="display:none;">
                 </div>
 
                 <!-- Biene 2 - Ebene 3 -->
                 <div id="bee2" class="bee beeSmall">
                     <!-- Antibiotikum -->
-                    <img class="antibiotika" src="img/Antibiotika.svg" data-2000="transform: rotate(0deg) scale(1);top:-10vh" data-2300="transform: rotate(500deg) scale(0.6);top:38vh;left:65%;" data-2600=" transform: rotate(600deg) scale(0); top:42vh; left:65%;">
+                    <img class="antibiotika" src="img/Antibiotika.svg" 
+                         data-2000="transform: rotate(0deg) scale(1);       top:-10vh" 
+                         data-2300="transform: rotate(500deg) scale(0.6);   top:38vh;" 
+                         data-2600="transform: rotate(600deg) scale(0);     top:42vh;">
                     <!-- Biene - Standard -->
-                    <img class="beeImg" src="img/Biene.png" data-start="display:block" data-2400="display:none;" data-2750="display:block;">
+                    <img class="beeImg" src="img/Biene.png" 
+                         data-start="display:block" 
+                         data-2400="display:none;" 
+                         data-2750="display:block;"
+                         data-3000="transform: rotate(0deg);       margin-top:0vh;" 
+                         data-5000=" transform: rotate(1500deg);   margin-top: 100vh;">
                     <!-- Biene - Mund offen -->
-                    <img class="beeImg" src="img/BieneMundOffen.svg" data-start="display:none" data-2400="display:block;" data-2750="display:none;">
+                    <img class="beeImg" src="img/BieneMundOffen.svg" 
+                         data-start="display:none" 
+                         data-2400="display:block;" 
+                         data-2750="display:none;">
                 </div>
 
                 <!-- Biene 3 - Ebene 2 -->
                 <div id="bee3" class="bee beeMedium">
                     <!-- Antibiotikum -->
-                    <img class="antibiotika" src="img/Antibiotika.svg" data-1800="transform: rotate(0deg) scale(1);top:-10vh" data-2100="transform: rotate(500deg) scale(0.6);top:23vh;left:65%;" data-2400=" transform: rotate(600deg) scale(0); top:27vh; left:65%;">
+                    <img class="antibiotika" src="img/Antibiotika.svg" 
+                         data-1800="transform: rotate(0deg) scale(1);       top:-10vh" 
+                         data-2100="transform: rotate(500deg) scale(0.6);   top:23vh;" 
+                         data-2400=" transform: rotate(600deg) scale(0);    top:27vh;">
                     <!-- Biene - Standard -->
-                    <img class="beeImg" src="img/Biene.png" data-start="display:block;  transform:rotate(0deg)" data-2100="display:none;" data-2450="display:block;" data-12000="transform: rotate(0deg);margin-top:0vh;" data-15000=" transform: rotate(1500deg); margin-top: 100vh;">
+                    <img class="beeImg" src="img/Biene.png" 
+                         data-start="display:block;  transform:rotate(0deg)" 
+                         data-2100="display:none;" 
+                         data-2450="display:block;" 
+                         data-12000="transform: rotate(0deg);       margin-top:0vh;" 
+                         data-15000=" transform: rotate(1500deg);   margin-top: 100vh;">
                     <!-- Biene - Mund offen -->
-                    <img class="beeImg" src="img/BieneMundOffen.svg" data-start="display:none" data-2100="display:block;" data-2450="display:none;">
+                    <img class="beeImg" src="img/BieneMundOffen.svg" 
+                         data-start="display:none" 
+                         data-2100="display:block;" 
+                         data-2450="display:none;">
                 </div>
 
                 <!-- Biene 4 - Ebene 2 -->
                 <div id="bee4" class="bee beeMedium">
                     <!-- Antibiotikum -->
-                    <img class="antibiotika" src="img/Antibiotika.svg" data-1400="transform: rotate(0deg) scale(1);top:-10vh" data-1700="transform: rotate(500deg) scale(0.6);top:30vh;left:65%;" data-2000=" transform: rotate(600deg) scale(0); top:33vh; left:65%;">
+                    <img class="antibiotika" src="img/Antibiotika.svg" 
+                         data-1400="transform: rotate(0deg) scale(1);       top:-10vh" 
+                         data-1700="transform: rotate(500deg) scale(0.6);   top:30vh;"
+                         data-2000=" transform: rotate(600deg) scale(0);    top:33vh;">
                     <!-- Biene - Standard -->
-                    <img class="beeImg" src="img/Biene.png" data-start="display:block" data-1700="display:none;" data-2050="display:block;" data-2100="padding-top:0vh" data-2400="padding-top:10vh" data-18400="transform:rotate(0deg);margin-top:0vh;"data-19500="transform:rotate(1500deg);margin-top:100vh;">
+                    <img class="beeImg" src="img/Biene.png" 
+                         data-start="display:block" 
+                         data-1700="display:none;" 
+                         data-2050="display:block;"
+                         data-18400="transform:rotate(0deg);    margin-top:0vh;" 
+                         data-19500="transform:rotate(1500deg); margin-top:100vh;">
                     <!-- Biene - Mund offen -->
-                    <img class="beeImg" src="img/BieneMundOffen.svg" data-start="display:none" data-1700="display:block;" data-2050="display:none;">
+                    <img class="beeImg" src="img/BieneMundOffen.svg" 
+                         data-start="display:none" 
+                         data-1700="display:block;" 
+                         data-2050="display:none;">
                 </div>
 
                 <!-- Biene 5 - Ebene 1 -->
                 <div id="bee5" class="bee beeBig">
                     <!-- Antibiotikum -->
-                    <img class="antibiotika" src="img/Antibiotika.svg" data-1500="transform: rotate(0deg) scale(1);top:-10vh" data-1800="transform: rotate(500deg) scale(0.6);top:32vh;left:65%;" data-2100=" transform: rotate(600deg) scale(0); top:36vh; left:65%;">
+                    <img class="antibiotika" src="img/Antibiotika.svg" 
+                         data-1500="transform: rotate(0deg) scale(1);       top:-10vh" 
+                         data-1800="transform: rotate(500deg) scale(0.6);   top:32vh;" 
+                         data-2100=" transform: rotate(600deg) scale(0);    top:36vh;">
                     <!-- Biene - Standard -->
-                    <img class="beeImg" src="img/Biene.png" data-start="display:block; padding-top:0vh" data-1800="display:none;" data-2150="display:block;" data-3500="padding-top:0vh" data-4900="padding-top:19vh">
+                    <img class="beeImg" src="img/Biene.png" 
+                         data-start="display:block; padding-top:0vh;" 
+                         data-1800="display:none;" 
+                         data-2150="display:block;"
+                         data-22000="transform: rotate(0deg);       margin-top:0vh;" 
+                         data-24000=" transform: rotate(1500deg);   margin-top: 100vh;">
                     <!-- Biene - Mund offen -->
-                    <img class="beeImg" src="img/BieneMundOffen.svg" data-start="display:none" data-1800="display:block;" data-2150="display:none;">
+                    <img class="beeImg" src="img/BieneMundOffen.svg" 
+                         data-start="display:none" 
+                         data-1800="display:block;" 
+                         data-2150="display:none;">
                 </div>
 
             </div>
@@ -110,7 +176,11 @@
         </div>
 
         <!-- Scene Antibiotikum - Schriftzug -->
-        <div id="scene-Antibiotikum" class="scene textPosition" data-start="left:110vw; opacity:1" data-2000="left:0vw;opacity:1" data-3500="opacity:1" data-4500="opacity:0">
+        <div id="scene-Antibiotikum" class="scene textPosition" 
+             data-start="left:110vw;" 
+             data-2000="left:0vw;" 
+             data-3500="opacity:1;" 
+             data-4500="opacity:0;">
             <h3 class="head">Antibiotikum <span class="moreIcon"></span></h3>
             <p class="text">Durch Antibiotikum werden Bienen anfälliger für Krankheiten ...
                 <p>
@@ -125,7 +195,11 @@
         </div>
 
         <!-- Scene Monokulturen - Schriftzug -->
-        <div id="scene-Monokulturen" class="scene textPosition" data-4000="left:110vw;" data-5000="left:0vw; opacity:1" data-7000="opacity:1" data-9000="opacity:0">
+        <div id="scene-Monokulturen" class="scene textPosition" 
+             data-4000="left:110vw;" 
+             data-5000="left:0vw;" 
+             data-7000="opacity:1;" 
+             data-9000="opacity:0;">
             <h3 class="head">Monokulturen <span class="moreIcon"></span></h3>
             <p class="text">Moderne Landwirtschaft vermindert die Vielfalt des Nahrungsangebots für Bienen ...</p>
             <div class="more">
@@ -139,7 +213,9 @@
         </div>
 
         <!--Blumen -->
-        <div class="scene" style="width: 300vw" data-start="left:110vw" data-500="left:110vw" data-5000="left:-400vw">
+        <div class="scene" style="width: 300vw" 
+             data-500="left:110vw" 
+             data-5000="left:-400vw">
             <img class="flower" id="flower1" src="img/Blume1.svg">
             <img class="flower" id="flower2" src="img/Blume2.svg">
             <img class="flower" id="flower3" src="img/Blume3.svg">
@@ -156,12 +232,15 @@
 
 
         <!-- Scene Blumenwiese -->
-        <img id="transitionTree" src="img/tree.svg" data-start="display:none;left:78vw" data-5500="display:block;left:83vw" data-9000="left:-34vw">
+        <img id="transitionTree" src="img/tree.svg" 
+             data-start="display:none;left:78vw;" 
+             data-5500="display:block;left:83vw;" 
+             data-9000="left:-34vw">
 
 
         <!-- Scene Pestizide -->
-        <div id="scene-Pestizide" class="scene" data-9000="top:100vh; left:110vw; width:10vw;" data-12000="top:0;left:-20vw; width:70vw;" data-17000="left:-100vw" >
-            <img id="gasmaskenMann" src="img/Gasmaskenmann.svg" >
+        <div id="scene-Pestizide" class="scene" data-9000="top:100vh; left:110vw; width:10vw;" data-12000="top:0;left:-20vw; width:70vw;" data-17000="left:-100vw">
+            <img id="gasmaskenMann" src="img/Gasmaskenmann.svg">
             <img class="gasWolke" src="img/Gaswolke.svg" data-11500="opacity:0" data-12500="opacity:1" data-14500="opacity:0">
         </div>
         <div id="aehrenGroup" class="scene" data-9000="left:110vw;" data-17000="left:-110vw;">
@@ -187,25 +266,41 @@
         </div>
 
 
-		<!-- Scene Milben -->
-            <img class="milbe" src="img/MilbeFallschirm.svg" data-start="display:block;" data-15000="top:-100vh;left:37vw;width:5vw;" data-18390="display:block;top:35vh;" data-18400="display:none;"> <!-- landet auf Biene -->
-            <img class="milbe" src="img/MilbeFallschirm.svg" data-17000="top:-100vh;left:20vw;width:10vw;" data-20000="top:200vh;">
-            <img class="milbe" src="img/MilbeFallschirm.svg" data-15000="top:-100vh;left:80vw;width:8vw;" data-20000="top:150vh;">
+        <!-- Scene Milben -->
+        <img class="milbe" src="img/MilbeFallschirm.svg" data-start="display:block;" data-15000="top:-100vh;left:37vw;width:5vw;" data-18390="display:block;top:35vh;" data-18400="display:none;">
+        <!-- landet auf Biene -->
+        <img class="milbe" src="img/MilbeFallschirm.svg" data-17000="top:-100vh;left:20vw;width:10vw;" data-20000="top:200vh;">
+        <img class="milbe" src="img/MilbeFallschirm.svg" data-15000="top:-100vh;left:80vw;width:8vw;" data-20000="top:150vh;">
 
-        
-        <div id="scene-MilbenText" class="scene textPosition"  data-17000="left:110vw;" data-18000="left:0vw; opacity:1" data-19000="opacity:1" data-22000="opacity:0">
+
+        <div id="scene-MilbenText" class="scene textPosition" data-15000="left:110vw;" data-17000="left:0vw; opacity:1" data-19000="opacity:1" data-22000="opacity:0">
             <h3 class="head">Milben <span class="moreIcon"></span></h3>
             <p class="text"> befallen die Bienen ...</p>
             <div class="more">
                 <div class="moreWrapper">
                     <div class="moreWrapperInner">
                         <h3>Milben</h3>
-                        <p>Die Varroamilbe gehört zu den größten Bedrohungen der westlichen Honigbiene. Zum einen ernährt  sie sich vom Blut der Bienen. Zusätzlich versucht sie in den Bienenstock zu gelangen, wo sie sich in die noch nicht verpuppten Zellen der Bienenbrut einnistet. Die Milbenpopulation kann so rasant anwachsen und das komplette Bienenvolk auslöschen.</p>
+                        <p>Die Varroamilbe gehört zu den größten Bedrohungen der westlichen Honigbiene. Zum einen ernährt sie sich vom Blut der Bienen. Zusätzlich versucht sie in den Bienenstock zu gelangen, wo sie sich in die noch nicht verpuppten Zellen der Bienenbrut einnistet. Die Milbenpopulation kann so rasant anwachsen und das komplette Bienenvolk auslöschen.</p>
                     </div>
                 </div>
             </div>
         </div>
+        
+        <img id="treePeople" src="img/BaumMitMenschen.svg" data-21000="right:-80vw" data-24000="right:-1vw">
 
+        
+        <div id="scene-BaumText" style="background: #000;" class="scene textPosition" data-25000="opacity:0" data-26000="opacity:1">
+            <h3 class="head">Milben <span class="moreIcon"></span></h3>
+            <p class="text"> befallen die Bienen ...</p>
+            <div class="more">
+                <div class="moreWrapper">
+                    <div class="moreWrapperInner">
+                        <h3>Milben</h3>
+                        <p>Die Varroamilbe gehört zu den größten Bedrohungen der westlichen Honigbiene. Zum einen ernährt sie sich vom Blut der Bienen. Zusätzlich versucht sie in den Bienenstock zu gelangen, wo sie sich in die noch nicht verpuppten Zellen der Bienenbrut einnistet. Die Milbenpopulation kann so rasant anwachsen und das komplette Bienenvolk auslöschen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     </div>
