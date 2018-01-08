@@ -39,9 +39,9 @@
  h3.head {
      position: absolute;
      right: 3vw;
-     bottom: 11vh;
+     top: 0vh;
  }
- /*
+
  h3 .moreIcon {
      background-image: url(../img/PlusButton.png);
      display: inline-block;
@@ -55,19 +55,16 @@
      position: absolute;
      left: -5vw;
  }
- */
+ 
  p.text {
      position: absolute;
      right: 3vw;
      width: 35vw;
      text-align: right;
-     bottom: 2vh;
+        top: 12vh;
  }
-#scene-Monokulturen .head, #scene-PestizideText .head, #scene-MilbenText .head {
-    top: 0vh;
-}
-#scene-Monokulturen .text, #scene-PestizideText .text, #scene-MilbenText .text {
-   top: 12vh;
+#scene-PestizideText p.text {
+     width: 28vw;
 }
  
  .more {
@@ -75,12 +72,23 @@
      position: absolute;
      width: 100vw;
      height: 100vh;
-     background: #000000e6;
+     background: url("../img/Waben3.png");
      left: 0;
      transition: top 0.1s 1.1s, opacity 1s;
      display: table;
      top: -100vh;
  }
+
+.moreText:after {
+    content: '';
+    background: url(../img/ExitButton.svg);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    background-size: contain;
+    top: 10px;
+}
  
  .more * {
      color: #fff;
@@ -98,6 +106,18 @@
      position: relative;
      max-width: 870px;
  }
+
+.moreText {
+    position: relative;
+    margin-left: 27%;
+}
+
+.moreIcon {
+        position: relative;
+    width: 24%;
+    float: left;
+    margin-right: 20px;
+}
  
  h3.highlight~.more {
      opacity: 1;
@@ -420,7 +440,7 @@
      position: fixed;
      z-index: 0;
      bottom: -30px;
-     width: 33vw;
+     width: 15vw;
  }
  /*Szene Pestizide*/
  
@@ -433,7 +453,7 @@
      width: 40vw;
      left: 60vw;
      position: absolute;
-     z-index: 100;
+     z-index: 5;
  }
  /*Ähren*/
  

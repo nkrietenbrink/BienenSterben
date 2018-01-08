@@ -38,9 +38,9 @@
         
         <!-- Hintergrund - Landschaft -->
         <div class="layer" id="layer2" 
-             data-0=    "background-position-x: -50%; left: 0vw;"
-             data-5500= "background-position-x: -30%; left: 0vw;" 
-             data-8500= "background-position-x: -30%; left:-100vw">
+             data-0=    "background-position-x: 20%; left: 0vw;"
+             data-5500= "background-position-x: 50%; left: 0vw;" 
+             data-8500= "background-position-x: 50%; left:-100vw">
         </div>
         
         <!-- Hintergrund - Felder -->
@@ -48,8 +48,8 @@
 
              data-5500=     "left: 100vw;"
              data-8500=     "background-position-x: -50%; left:0vw;" 
-             data-12000=    "background-position-x: -10%" 
-             data-24000=    "background-position-x: 25%">
+             
+             data-24000=    "background-position-x: 20%">
         </div>
 
         <!-- Bienen Container + Antibitika -->
@@ -187,8 +187,13 @@
                     <div class="more">
                         <div class="moreWrapper">
                             <div class="moreWrapperInner">
-                                <h3>Antibiotikum</h3>
-                                <p>Viele Imker in den USA präparieren Bienenstöcke mit dem Antibiotikum Tetracyclin. Sie wollen die Larven vor der Infektionskrankheit "Amerikanische Faulbrut" schützen. Forscher haben festgestellt, dass nach einer längeren Behandlung mit Tetracyclin deutlich mehr Tiere sterben als ohne das Medikament. Man geht davon aus, dass Tetracyclin bei den Bienen bestimmte Darmbakterien abtötet, die vor potenziell schädlichen Serratia-Darmbakterien schützen.</p>
+                                <div class="moreIcon">
+                                    <img src="img/Antibiotika_Gruppe.svg">
+                                </div>
+                                <div class="moreText">
+                                        <h3>Antibiotikum</h3>
+                                        <p>Viele Imker in den USA präparieren Bienenstöcke mit dem Antibiotikum Tetracyclin. Sie wollen die Larven vor der Infektionskrankheit "Amerikanische Faulbrut" schützen. Forscher haben festgestellt, dass nach einer längeren Behandlung mit Tetracyclin deutlich mehr Tiere sterben als ohne das Medikament. Man geht davon aus, dass Tetracyclin bei den Bienen bestimmte Darmbakterien abtötet, die vor potenziell schädlichen Serratia-Darmbakterien schützen.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -205,8 +210,13 @@
             <div class="more">
                 <div class="moreWrapper">
                     <div class="moreWrapperInner">
-                        <h3>Monokulturen</h3>
-                        <p>Der zunehmende Aufbau von Monokulturen vermindert die Vielfalt des Nahrungsangebots für Bienen. Diese brauchen eine vielseitige Ernährung – das macht sie widerstandsfähiger gegen Krankheiten. Oft blühen einseitig angepflanzte Nutzpflanzen nur kurze Zeit und lassen die Bienen das restliche Jahr über hungern. Auch private „ordentliche“ grüne Gärten ohne Blumen oder nur mit Zierpflanzen bieten unseren Bienen keine Nahrung. </p>
+                        <div class="moreIcon">
+                            <img src="img/Aehren_Gruppe.svg">
+                        </div>
+                        <div class="moreText">
+                            <h3>Monokulturen</h3>
+                            <p>Der zunehmende Aufbau von Monokulturen vermindert die Vielfalt des Nahrungsangebots für Bienen. Diese brauchen eine vielseitige Ernährung – das macht sie widerstandsfähiger gegen Krankheiten. Oft blühen einseitig angepflanzte Nutzpflanzen nur kurze Zeit und lassen die Bienen das restliche Jahr über hungern. Auch private „ordentliche“ grüne Gärten ohne Blumen oder nur mit Zierpflanzen bieten unseren Bienen keine Nahrung. </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -232,16 +242,19 @@
 
 
         <!-- Scene Blumenwiese -->
-        <img id="transitionTree" src="img/tree.svg" 
+        <img id="transitionTree" src="img/Baum.svg" 
              data-start="display:none;left:78vw;" 
-             data-5500="display:block;left:83vw;" 
-             data-9000="left:-34vw">
+             data-5400="display:block;left:96vw;" 
+             data-8800="left:-18vw">
 
 
         <!-- Scene Pestizide -->
         <div id="scene-Pestizide" class="scene" data-9000="top:100vh; left:110vw; width:10vw;" data-12000="top:0;left:-20vw; width:70vw;" data-17000="left:-100vw">
             <img id="gasmaskenMann" src="img/Gasmaskenmann.svg">
-            <img class="gasWolke" src="img/Gaswolke.svg" data-11500="opacity:0" data-12500="opacity:1" data-14500="opacity:0">
+            
+            <img class="gasWolke" src="img/Gaswolke.svg" data-11500="opacity:0" data-12500="transform: scale(0.7); opacity:1" data-14500="transform: scale(3.5); opacity:0">
+       
+            
         </div>
         <div id="aehrenGroup" class="scene" data-9000="left:110vw;" data-17000="left:-110vw;">
             <img src="img/aehren/aehre1.png" class="aehre" id="aehre1">
@@ -254,12 +267,17 @@
         </div>
         <div id="scene-PestizideText" class="scene textPosition" data-10000="left:110vw;" data-12000="left:0vw; opacity:1" data-13000="opacity:1" data-16000="opacity:0">
             <h3 class="head">Pestizide <span class="moreIcon"></span></h3>
-            <p class="text">Der Einsatz von Pflanzenschutzmittel vergiftet Bienen ...</p>
+            <p class="text">Der Einsatz von Pflanzenschutzmittel vergiftet die Bienen ...</p>
             <div class="more">
                 <div class="moreWrapper">
                     <div class="moreWrapperInner">
-                        <h3>Pestizide</h3>
-                        <p>Der Einsatz von Pestiziden in der Agrarwirtschaft macht den Bienen ebenfalls zu schaffen. Diese Giftstoffe wirken sich nicht nur auf den Honig aus, sondern beeinflussen darüber hinaus das Nervensystem der Insekten und ihre natürliche Orientierungsfähigkeit. Pestizide können Lebensdauer und Fortpflanzung der Bienen beeinträchtigen.</p>
+                        <div class="moreIcon">
+                            <img src="img/Antibiotika_Gruppe.svg">
+                        </div>
+                        <div class="moreText">
+                            <h3>Pestizide</h3>
+                            <p>Der Einsatz von Pestiziden in der Agrarwirtschaft macht den Bienen ebenfalls zu schaffen. Diese Giftstoffe wirken sich nicht nur auf den Honig aus, sondern beeinflussen darüber hinaus das Nervensystem der Insekten und ihre natürliche Orientierungsfähigkeit. Pestizide können Lebensdauer und Fortpflanzung der Bienen beeinträchtigen.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -275,12 +293,17 @@
 
         <div id="scene-MilbenText" class="scene textPosition" data-15000="left:110vw;" data-17000="left:0vw; opacity:1" data-19000="opacity:1" data-22000="opacity:0">
             <h3 class="head">Milben <span class="moreIcon"></span></h3>
-            <p class="text"> befallen die Bienen ...</p>
+            <p class="text"> befallen die Bienen und nisten sich im Bienenstock ein ...</p>
             <div class="more">
                 <div class="moreWrapper">
                     <div class="moreWrapperInner">
-                        <h3>Milben</h3>
-                        <p>Die Varroamilbe gehört zu den größten Bedrohungen der westlichen Honigbiene. Zum einen ernährt sie sich vom Blut der Bienen. Zusätzlich versucht sie in den Bienenstock zu gelangen, wo sie sich in die noch nicht verpuppten Zellen der Bienenbrut einnistet. Die Milbenpopulation kann so rasant anwachsen und das komplette Bienenvolk auslöschen.</p>
+                        <div class="moreIcon">
+                            <img src="img/MilbeFallschirm.svg">
+                        </div>
+                        <div class="moreText">
+                            <h3>Milben</h3>
+                            <p>Die Varroamilbe gehört zu den größten Bedrohungen der westlichen Honigbiene. Zum einen ernährt sie sich vom Blut der Bienen. Zusätzlich versucht sie in den Bienenstock zu gelangen, wo sie sich in die noch nicht verpuppten Zellen der Bienenbrut einnistet. Die Milbenpopulation kann so rasant anwachsen und das komplette Bienenvolk auslöschen.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -289,17 +312,11 @@
         <img id="treePeople" src="img/BaumMitMenschen.svg" data-21000="right:-80vw" data-24000="right:-1vw">
 
         
-        <div id="scene-BaumText" style="background: #000;" class="scene textPosition" data-25000="opacity:0" data-26000="opacity:1">
-            <h3 class="head">Milben <span class="moreIcon"></span></h3>
+        <div id="scene-BaumText" style="background: #000;" class="scene textPosition" data-start="display:none" data-25000="display:block; opacity:0" data-26000="opacity:1">
+            <h3 class="head">
+                Milben <span class="moreIcon"></span></h3>
             <p class="text"> befallen die Bienen ...</p>
-            <div class="more">
-                <div class="moreWrapper">
-                    <div class="moreWrapperInner">
-                        <h3>Milben</h3>
-                        <p>Die Varroamilbe gehört zu den größten Bedrohungen der westlichen Honigbiene. Zum einen ernährt sie sich vom Blut der Bienen. Zusätzlich versucht sie in den Bienenstock zu gelangen, wo sie sich in die noch nicht verpuppten Zellen der Bienenbrut einnistet. Die Milbenpopulation kann so rasant anwachsen und das komplette Bienenvolk auslöschen.</p>
-                    </div>
-                </div>
-            </div>
+           
         </div>
 
 
