@@ -29,21 +29,21 @@
         </div>
     </div>
     <div id="parallax">
-        
-        <!-- Hintergrund - Berge-->
+
+        <!-- Hintergrund - Berge
         <div class="layer" id="layer3" 
              data-0=    "background-position-x: 0%" 
              data-24000="background-position-x: 50%">
         </div>
         
-        <!-- Hintergrund - Landschaft -->
+        Hintergrund - Landschaft
         <div class="layer" id="layer2" 
              data-0=    "background-position-x: 20%; left: 0vw;"
              data-5500= "background-position-x: 50%; left: 0vw;" 
              data-8500= "background-position-x: 50%; left:-100vw">
         </div>
         
-        <!-- Hintergrund - Felder -->
+       Hintergrund - Felder
         <div class="layer" id="layer4" 
 
              data-5500=     "left: 100vw;"
@@ -51,7 +51,17 @@
              
              data-24000=    "background-position-x: 20%">
         </div>
+        -->
 
+        <img style="position:absolute; top:0px; height:100vh;" src="img/hg/Nature-SKY.png" data-0="left:0vw;" data-24000="left:-100vw">
+
+        <div class="scene" data-5500="left:0vw;" data-8700="left: -105vw;" style="overflow:hidden;">
+            <img style="position:absolute; top:0px; height:100vh;" src="img/hg/Nature-Ground.png" data-0="left:0vw;" data-5500="left:-100vw">
+        </div>
+        <div class="scene" data-start="overflow:hidden;" data-5500="left:100vw;" data-8600="left:-5vw:" style="width: 105vw; overflow:hidden;">
+
+            <img style="position:absolute; top:0px; height:100vh;" src="img/hg/FelderIG.png" data-8500="left:0vw;" data-25000="left:-230vw">
+        </div>
         <!-- Bienen Container + Antibitika -->
         <div class="beeWrapper section-100 ">
             <div class="beeInnerWrapper">
@@ -59,106 +69,72 @@
                 <!-- Biene 1 - Ebene 3 -->
                 <div id="bee1" class="bee beeSmall">
                     <!-- Antibiotikum -->
-                    <img class="antibiotika" src="img/Antibiotika.svg" 
-                         data-1800="transform: rotate(0deg) scale(1);       top:-10vh" 
-                         data-2100="transform: rotate(500deg) scale(0.6);   top:45vh;" 
-                         data-2400=" transform: rotate(600deg) scale(0);    top:49vh;">
+                    <img class="antibiotika" src="img/Antibiotika.svg" data-1800="transform: rotate(0deg) scale(1);       top:-10vh" data-2100="transform: rotate(500deg) scale(0.6);   top:45vh;" data-2400=" transform: rotate(600deg) scale(0);    top:49vh;">
                     <!-- Biene - Standard -->
-                    <img class="beeImg" src="img/Biene.png" 
-                         data-start="display:block" 
-                         data-2100="display:none;" 
-                         data-2450="display:block;"
-                         data-6000="transform: rotate(0deg);       margin-top:0vh;" 
-                         data-8000=" transform: rotate(1500deg);   margin-top: 100vh;">
+                    <img class="beeImg" src="img/Biene.png" data-start="display:block" data-2100="display:none;" data-2450="display:block;" data-6000="transform: rotate(0deg);       margin-top:0vh;" data-8000=" transform: rotate(1500deg);   margin-top: 100vh;">
                     <!-- BieneGIF - Mund offen -->
-                    <img class="beeImg" src="img/BieneMundOffen.svg" 
-                         data-start="display:none" 
-                         data-2100="display:block;" 
-                         data-2450="display:none;">
+                    <img class="beeImg" src="img/BieneMundOffen.svg" data-start="display:none" data-2100="display:block;" data-2450="display:none;">
                 </div>
 
                 <!-- Biene 2 - Ebene 3 -->
                 <div id="bee2" class="bee beeSmall">
                     <!-- Antibiotikum -->
-                    <img class="antibiotika" src="img/Antibiotika.svg" 
-                         data-2000="transform: rotate(0deg) scale(1);       top:-10vh" 
-                         data-2300="transform: rotate(500deg) scale(0.6);   top:38vh;" 
-                         data-2600="transform: rotate(600deg) scale(0);     top:42vh;">
+                    <img class="antibiotika" src="img/Antibiotika.svg" data-2000="transform: rotate(0deg) scale(1);       top:-10vh" data-2300="transform: rotate(500deg) scale(0.6);   top:38vh;" data-2600="transform: rotate(600deg) scale(0);     top:42vh;">
                     <!-- Biene - Standard -->
-                    <img class="beeImg" src="img/Biene.png" 
-                         data-start="display:block" 
-                         data-2400="display:none;" 
-                         data-2750="display:block;"
-                         data-3000="transform: rotate(0deg);       margin-top:0vh;" 
-                         data-5000=" transform: rotate(1500deg);   margin-top: 100vh;">
+                    <img class="beeImg" src="img/Biene.png" data-start="display:block" data-2400="display:none;" data-2750="display:block;" data-3000="transform: rotate(0deg);       margin-top:0vh;" data-5000=" transform: rotate(1500deg);   margin-top: 100vh;">
                     <!-- Biene - Mund offen -->
-                    <img class="beeImg" src="img/BieneMundOffen.svg" 
-                         data-start="display:none" 
-                         data-2400="display:block;" 
-                         data-2750="display:none;">
+                    <img class="beeImg" src="img/BieneMundOffen.svg" data-start="display:none" data-2400="display:block;" data-2750="display:none;">
                 </div>
 
                 <!-- Biene 3 - Ebene 2 -->
                 <div id="bee3" class="bee beeMedium">
                     <!-- Antibiotikum -->
-                    <img class="antibiotika" src="img/Antibiotika.svg" 
-                         data-1800="transform: rotate(0deg) scale(1);       top:-10vh" 
-                         data-2100="transform: rotate(500deg) scale(0.6);   top:23vh;" 
-                         data-2400=" transform: rotate(600deg) scale(0);    top:27vh;">
+                    <img class="antibiotika" src="img/Antibiotika.svg" data-1800="transform: rotate(0deg) scale(1);       top:-10vh" data-2100="transform: rotate(500deg) scale(0.6);   top:23vh;" data-2400=" transform: rotate(600deg) scale(0);    top:27vh;">
                     <!-- Biene - Standard -->
-                    <img class="beeImg" src="img/Biene.png" 
-                         data-start="display:block;  transform:rotate(0deg)" 
-                         data-2100="display:none;" 
-                         data-2450="display:block;" 
-                         data-12000="transform: rotate(0deg);       margin-top:0vh;" 
-                         data-15000=" transform: rotate(1500deg);   margin-top: 100vh;">
+                    <img class="beeImg" src="img/Biene.png" data-start="display:block;  transform:rotate(0deg)" data-2100="display:none;" data-2450="display:block;" data-12000="transform: rotate(0deg);       margin-top:0vh;" data-15000=" transform: rotate(1500deg);   margin-top: 100vh;">
                     <!-- Biene - Mund offen -->
-                    <img class="beeImg" src="img/BieneMundOffen.svg" 
-                         data-start="display:none" 
-                         data-2100="display:block;" 
-                         data-2450="display:none;">
+                    <img class="beeImg" src="img/BieneMundOffen.svg" data-start="display:none" data-2100="display:block;" data-2450="display:none;">
                 </div>
 
                 <!-- Biene 4 - Ebene 2 -->
                 <div id="bee4" class="bee beeMedium">
                     <!-- Antibiotikum -->
-                    <img class="antibiotika" src="img/Antibiotika.svg" 
-                         data-1400="transform: rotate(0deg) scale(1);       top:-10vh" 
-                         data-1700="transform: rotate(500deg) scale(0.6);   top:30vh;"
-                         data-2000=" transform: rotate(600deg) scale(0);    top:33vh;">
+                    <img class="antibiotika" src="img/Antibiotika.svg" data-1400="transform: rotate(0deg) scale(1);       top:-10vh" data-1700="transform: rotate(500deg) scale(0.6);   top:30vh;" data-2000=" transform: rotate(600deg) scale(0);    top:33vh;">
                     <!-- Biene - Standard -->
-                    <img class="beeImg" src="img/Biene.png" 
-                         data-start="display:block" 
-                         data-1700="display:none;" 
-                         data-2050="display:block;"
-                         data-18400="transform:rotate(0deg);    margin-top:0vh;" 
-                         data-19500="transform:rotate(1500deg); margin-top:100vh;">
+                    <img class="beeImg" src="img/Biene.png" data-start="display:block" data-1700="display:none;" data-2050="display:block;" data-18400="transform:rotate(0deg);    margin-top:0vh;" data-19500="transform:rotate(1500deg); margin-top:100vh;">
                     <!-- Biene - Mund offen -->
-                    <img class="beeImg" src="img/BieneMundOffen.svg" 
-                         data-start="display:none" 
-                         data-1700="display:block;" 
-                         data-2050="display:none;">
+                    <img class="beeImg" src="img/BieneMundOffen.svg" data-start="display:none" data-1700="display:block;" data-2050="display:none;">
                 </div>
 
                 <!-- Biene 5 - Ebene 1 -->
                 <div id="bee5" class="bee beeBig">
                     <!-- Antibiotikum -->
-                    <img class="antibiotika" src="img/Antibiotika.svg" 
-                         data-1500="transform: rotate(0deg) scale(1);       top:-10vh" 
-                         data-1800="transform: rotate(500deg) scale(0.6);   top:32vh;" 
-                         data-2100=" transform: rotate(600deg) scale(0);    top:36vh;">
+                    <img class="antibiotika" src="img/Antibiotika.svg" data-1500="transform: rotate(0deg) scale(1);       top:-10vh" data-1800="transform: rotate(500deg) scale(0.6);   top:32vh;" data-2100=" transform: rotate(600deg) scale(0);    top:36vh;">
                     <!-- Biene - Standard -->
-                    <img class="beeImg" src="img/Biene.png" 
-                         data-start="display:block; padding-top:0vh;" 
-                         data-1800="display:none;" 
-                         data-2150="display:block;"
-                         data-22000="transform: rotate(0deg);       margin-top:0vh;" 
-                         data-24000=" transform: rotate(1500deg);   margin-top: 100vh;">
+                    <img class="beeImg" src="img/Biene.png" data-start="display:block; padding-top:0vh;" data-1800="display:none;" data-2150="display:block;" data-22000="transform: rotate(0deg);       margin-top:0vh;" data-24000=" transform: rotate(1500deg);   margin-top: 100vh;">
                     <!-- Biene - Mund offen -->
-                    <img class="beeImg" src="img/BieneMundOffen.svg" 
-                         data-start="display:none" 
-                         data-1800="display:block;" 
-                         data-2150="display:none;">
+                    <img class="beeImg" src="img/BieneMundOffen.svg" data-start="display:none" data-1800="display:block;" data-2150="display:none;">
+                </div>
+
+
+                <!-- Biene 6 - Ebene 2 -->
+                <div id="bee6" class="bee beeMedium">
+                    <!-- Antibiotikum -->
+                    <img class="antibiotika" src="img/Antibiotika.svg" data-1800="transform: rotate(0deg) scale(1);       top:-10vh" data-2100="transform: rotate(500deg) scale(0.6);   top:40vh;" data-2400=" transform: rotate(600deg) scale(0);    top:48vh;">
+                    <!-- Biene - Standard -->
+                    <img class="beeImg" src="img/Biene.png" data-start="display:block;  transform:rotate(0deg)" data-2100="display:none;" data-2450="display:block;" data-12500="transform: rotate(0deg);       margin-top:0vh;" data-15400=" transform: rotate(1500deg);   margin-top: 100vh;">
+                    <!-- Biene - Mund offen -->
+                    <img class="beeImg" src="img/BieneMundOffen.svg" data-start="display:none" data-2100="display:block;" data-2450="display:none;">
+                </div>
+
+                <!-- Biene 7 - Ebene 3 -->
+                <div id="bee7" class="bee beeSmall">
+                    <!-- Antibiotikum -->
+                    <img class="antibiotika" src="img/Antibiotika.svg" data-1750="transform: rotate(0deg) scale(1);       top:-10vh" data-2050="transform: rotate(500deg) scale(0.6);   top:18vh;" data-2350="transform: rotate(600deg) scale(0);     top:24vh;">
+                    <!-- Biene - Standard -->
+                    <img class="beeImg" src="img/Biene.png" data-start="display:block" data-2200="display:none;" data-2550="display:block;" data-6100="transform: rotate(0deg);       margin-top:0vh;" data-8200=" transform: rotate(1500deg);   margin-top: 100vh;">
+                    <!-- Biene - Mund offen -->
+                    <img class="beeImg" src="img/BieneMundOffen.svg" data-start="display:none" data-2200="display:block;" data-2550="display:none;">
                 </div>
 
             </div>
@@ -176,11 +152,7 @@
         </div>
 
         <!-- Scene Antibiotikum - Schriftzug -->
-        <div id="scene-Antibiotikum" class="scene textPosition" 
-             data-start="left:110vw;" 
-             data-2000="left:0vw;" 
-             data-3500="opacity:1;" 
-             data-4500="opacity:0;">
+        <div id="scene-Antibiotikum" class="scene textPosition" data-start="left:110vw;" data-2000="left:0vw;" data-3500="opacity:1;" data-4500="opacity:0;">
             <h3 class="head">Antibiotikum <span class="moreIcon"></span></h3>
             <p class="text">Durch Antibiotikum werden Bienen anfälliger für Krankheiten ...
                 <p>
@@ -191,8 +163,8 @@
                                     <img src="img/Antibiotika_Gruppe.svg">
                                 </div>
                                 <div class="moreText">
-                                        <h3>Antibiotikum</h3>
-                                        <p>Viele Imker in den USA präparieren Bienenstöcke mit dem Antibiotikum Tetracyclin. Sie wollen die Larven vor der Infektionskrankheit „Amerikanische Faulbrut“ schützen. Forscher haben festgestellt, dass nach einer längeren Behandlung mit Tetracyclin deutlich mehr Tiere sterben als ohne das Medikament. Man geht davon aus, dass Tetracyclin bei den Bienen bestimmte Darmbakterien abtötet, die vor potenziell schädlichen Serratia-Darmbakterien schützen.</p>
+                                    <h3>Antibiotikum</h3>
+                                    <p>Viele Imker in den USA präparieren Bienenstöcke mit dem Antibiotikum Tetracyclin. Sie wollen die Larven vor der Infektionskrankheit „Amerikanische Faulbrut“ schützen. Forscher haben festgestellt, dass nach einer längeren Behandlung mit Tetracyclin deutlich mehr Tiere sterben als ohne das Medikament. Man geht davon aus, dass Tetracyclin bei den Bienen bestimmte Darmbakterien abtötet, die vor potenziell schädlichen Serratia-Darmbakterien schützen.</p>
                                 </div>
                             </div>
                         </div>
@@ -200,11 +172,7 @@
         </div>
 
         <!-- Scene Monokulturen - Schriftzug -->
-        <div id="scene-Monokulturen" class="scene textPosition" 
-             data-4000="left:110vw;" 
-             data-5000="left:0vw;" 
-             data-7000="opacity:1;" 
-             data-9000="opacity:0;">
+        <div id="scene-Monokulturen" class="scene textPosition" data-4000="left:110vw;" data-5000="left:0vw;" data-7000="opacity:1;" data-9000="opacity:0;">
             <h3 class="head">Monokulturen <span class="moreIcon"></span></h3>
             <p class="text">Moderne Landwirtschaft vermindert die Vielfalt des Nahrungsangebots für Bienen ...</p>
             <div class="more">
@@ -223,9 +191,7 @@
         </div>
 
         <!--Blumen -->
-        <div class="scene" style="width: 300vw" 
-             data-500="left:110vw" 
-             data-5000="left:-400vw">
+        <div class="scene" style="width: 300vw" data-500="left:110vw" data-5000="left:-400vw">
             <img class="flower" id="flower1" src="img/Blume1.svg">
             <img class="flower" id="flower2" src="img/Blume2.svg">
             <img class="flower" id="flower3" src="img/Blume3.svg">
@@ -242,19 +208,16 @@
 
 
         <!-- Scene Blumenwiese -->
-        <img id="transitionTree" src="img/Baum.svg" 
-             data-start="display:none;left:78vw;" 
-             data-5400="display:block;left:96vw;" 
-             data-8800="left:-18vw">
+        <img id="transitionTree" src="img/Baum.svg" data-start="display:none;left:78vw;" data-5400="display:block;left:96vw;" data-8800="left:-18vw">
 
 
         <!-- Scene Pestizide -->
         <div id="scene-Pestizide" class="scene" data-9000="top:100vh; left:110vw; width:10vw;" data-12000="top:0;left:-20vw; width:70vw;" data-17000="left:-100vw">
             <img id="gasmaskenMann" src="img/Gasmaskenmann.svg">
-            
+
             <img class="gasWolke" src="img/Gaswolke.svg" data-11500="opacity:0" data-12500="transform: scale(0.7); opacity:1" data-14500="transform: scale(3.5); opacity:0">
-       
-            
+
+
         </div>
         <div id="aehrenGroup" class="scene" data-9000="left:110vw;" data-17000="left:-110vw;">
             <img src="img/aehren/aehre1.png" class="aehre" id="aehre1">
@@ -308,16 +271,21 @@
                 </div>
             </div>
         </div>
-        
-        <!-- Scene Menschen auf Baum -->
-        <img id="treePeople" src="img/BaumMitMenschen.svg" data-21000="right:-80vw" data-23500="right:20vw">
 
-        
-        <div id="scene-BaumText" class="scene textPosition" data-23000="left:110vw" data-25000="left:0vw; opacity:1" data-27000="opacity:1" data-29000="opacity:0">
+        <!-- Scene Menschen auf Baum -->
+        <img id="treePeople4" class="treePeople" src="img/BaumMitMenschen.svg" data-21000="right:-120vw" data-24500="right:10vw">
+        <img id="treePeople3" class="treePeople" src="img/BaumMitMenschen.svg" data-21000="right:-120vw" data-24500="right:40vw">
+        <img id="treePeople2" class="treePeople" src="img/BaumMitMenschen.svg" data-21000="right:-140vw" data-24500="right:20vw">
+        <img id="treePeople1" class="treePeople" src="img/BaumMitMenschen.svg" data-21000="right:-80vw" data-24500="right:40vw">
+
+
+
+
+        <div id="scene-BaumText" class="scene textPosition" data-23000="left:110vw" data-24500="left:0vw; opacity:1" data-27000="opacity:1" data-29000="opacity:0">
             <h3 class="head">
                 Menschliche Bienen <span class="moreIcon"></span></h3>
             <p class="text"> Ohne Bienen müssen Pflanzen per Hand bestäubt werden ...</p>
-           <div class="more">
+            <div class="more">
                 <div class="moreWrapper">
                     <div class="moreWrapperInner">
                         <div class="moreIcon">
@@ -325,26 +293,26 @@
                         </div>
                         <div class="moreText">
                             <h3>Menschliche Bienen</h3>
-                            <p>In China müssen Menschen Pflanzen bereits per Hand bestäuben, Bienen gibt es dort aufgrund von massivem Einsatz von Pestiziden fast garnicht mehr.
-                            Ein Bienenvolk kann pro Tag bis zu 300 Millionen Blüten bestäuben, dafür bräuchte man mehr als 1500 Menschen.<strong></strong></p>							
+                            <p>In China müssen Menschen Pflanzen bereits per Hand bestäuben, Bienen gibt es dort aufgrund von massivem Einsatz von Pestiziden fast garnicht mehr. Ein Bienenvolk kann pro Tag bis zu 300 Millionen Blüten bestäuben, dafür bräuchte man mehr als 1500 Menschen.<strong></strong></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        
-          <!-- Endscreen -->
-        
-         <div class="endScene scene"  data-start="display:none" data-30000="display:block; left: +76vw; opacity:1" data-34000="left: -23vw">
-             <div class="endSceneInner">
-                <img id="iconBee" src="img/Icon-Biene.svg">
-                <h1 >Bienen sterben.</h1>
-   <p class="end">Bienen sind sehr wichtig für uns Menschen, denn sie machen mehr als nur Honig. Und jeder von uns kann zur Rettung dieser Insekten beitragen. Z.B. durch bienenfreundlichen Pflanzen im Garten oder auf dem Balkon. Und auch durch Verbreitung von Informationen zum Bienensterben und durch Einsatz für den Schutz der Bienen in unserer Gesellschaft.</p>
+
+
+        <!-- Endscreen -->
+
+        <div class="endScene scene" data-start="display:none" data-25000="display:table; left: 150vw; opacity:1" data-29000="left: 0vw">
+            <div class="endSceneInner">
+                <img id="iconBee2" class="iconBee" src="img/Icon-Biene.svg">
+                <h1>Bienen sterben.</h1>
+                <p class="end">Bienen sind sehr wichtig für uns Menschen, denn sie machen mehr als nur Honig. Und jeder von uns kann zur Rettung dieser Insekten beitragen. Z.B. durch bienenfreundlichen Pflanzen im Garten oder auf dem Balkon. Und auch durch Verbreitung von Informationen zum Bienensterben und durch Einsatz für den Schutz der Bienen in unserer Gesellschaft.</p>
+                <img src="img/Bienen_tot.png" style="    position: absolute;right: 4vw;bottom: -19px;">
             </div>
-        </div> 
-        
-       
+        </div>
+
+
 
 
     </div>
